@@ -1,6 +1,7 @@
 # dbt-action
 
-A GitHub Action to run [dbt](https://www.getdbt.com) commands in a Docker container. It uses the official images provided by [Fishtown Analytics](https://hub.docker.com/r/fishtownanalytics/dbt/tags). You can use [dbt commands](https://docs.getdbt.com/reference/dbt-commands) such as `run`, `test` and `debug`. This action captures the dbt console output for use in subsequent steps.
+A GitHub Action to run [dbt](https://www.getdbt.com) commands in a Docker container.
+You can use [dbt commands](https://docs.getdbt.com/reference/dbt-commands) such as `run`, `test` and `debug`. This action captures the dbt console output for use in subsequent steps.
 
 ### dbt version
 The current version of dbt is **1.2.1**. Please note that from dbt v1.0.0. you may have to change your dbt project structure compared to v0.x.x. See the [migration](https://docs.getdbt.com/docs/guides/migration-guide/upgrading-to-1-0-0) docs.
@@ -142,6 +143,11 @@ Here is a [sample workflow](https://github.com/mwhitaker/dbt-action-sample) that
 
 ## Bugs and feature requests
 Please submit via [Github issues](https://github.com/mwhitaker/dbt-action/issues).
+
+## Building Images
+
+1. Run `docker build .` from the `Docker_build` directory.
+
 ## License
 
 [MIT](LICENSE)
